@@ -1,0 +1,225 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE THIS: Browser tab title -->
+    <title>Yash | Skills</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+         ========================= -->
+
+    <nav>
+
+        <!-- CHANGE THIS: Your name -->
+        <h2>Yash</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="themeButton">🌙</button>
+
+    </nav>
+
+
+    <!-- =========================
+         SKILLS PAGE
+         ========================= -->
+
+    <section class="page">
+
+        <h1>My Skills</h1>
+
+        <p class="click-info">
+            Click on any skill to learn more.
+        </p>
+
+
+        <div class="skills-container">
+
+
+            <!-- =========================
+                 SKILL 1
+                 CHANGE THE DETAILS BELOW
+                 ========================= -->
+
+            <div class="skill"
+                 onclick="openModal(
+                 'HTML',
+                 'HTML (HyperText Markup Language)',
+                 'HTML is used to create the structure of a website. It defines headings, paragraphs, images, links, forms, buttons and other elements of a webpage.'
+                 )">
+
+                <h2>HTML</h2>
+
+                <p>Website Structure</p>
+
+                <span>Click to learn more →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 SKILL 2
+                 ========================= -->
+
+            <div class="skill"
+                 onclick="openModal(
+                 'CSS',
+                 'CSS (Cascading Style Sheets)',
+                 'CSS is used to design and style websites. It controls colors, fonts, spacing, layouts, animations and responsive designs.'
+                 )">
+
+                <h2>CSS</h2>
+
+                <p>Website Design</p>
+
+                <span>Click to learn more →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 SKILL 3
+                 ========================= -->
+
+            <div class="skill"
+                 onclick="openModal(
+                 'JavaScript',
+                 'JavaScript',
+                 'JavaScript is a programming language used to make websites interactive. It can handle buttons, forms, animations, dark mode, popups and dynamic content.'
+                 )">
+
+                <h2>JavaScript</h2>
+
+                <p>Website Functionality</p>
+
+                <span>Click to learn more →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 SKILL 4
+                 ========================= -->
+
+            <div class="skill"
+                 onclick="openModal(
+                 'Python',
+                 'Python',
+                 'Python is a beginner-friendly programming language used for software development, automation, data analysis, artificial intelligence and many other applications.'
+                 )">
+
+                <h2>Python</h2>
+
+                <p>Programming</p>
+
+                <span>Click to learn more →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 SKILL 5
+                 ========================= -->
+
+            <div class="skill"
+                 onclick="openModal(
+                 'Java',
+                 'Java',
+                 'Java is an object-oriented programming language commonly used for desktop applications, backend development, Android applications and large software systems.'
+                 )">
+
+                <h2>Java</h2>
+
+                <p>Object-Oriented Programming</p>
+
+                <span>Click to learn more →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 SKILL 6
+                 ========================= -->
+
+            <div class="skill"
+                 onclick="openModal(
+                 'Data Structures',
+                 'Data Structures',
+                 'Data structures are ways of organizing and storing data so that it can be accessed and processed efficiently. Examples include arrays, stacks, queues, trees and graphs.'
+                 )">
+
+                <h2>Data Structures</h2>
+
+                <p>Algorithms & Problem Solving</p>
+
+                <span>Click to learn more →</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DETAILS POPUP / MODAL
+         ========================= -->
+
+    <div id="detailsModal" class="modal">
+
+        <div class="modal-content">
+
+            <!-- Close button -->
+            <button class="close-button" onclick="closeModal()">
+                ×
+            </button>
+
+            <!-- JavaScript puts the title here -->
+            <h2 id="modalTitle"></h2>
+
+            <!-- JavaScript puts the subtitle here -->
+            <h3 id="modalSubtitle"></h3>
+
+            <!-- JavaScript puts the description here -->
+            <p id="modalDescription"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <!-- CHANGE THIS -->
+        <p>© 2026 Yash | My Portfolio</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

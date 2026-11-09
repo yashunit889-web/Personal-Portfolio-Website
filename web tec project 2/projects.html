@@ -1,0 +1,198 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE THIS -->
+    <title>Yash | Projects</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION BAR
+         ========================= -->
+
+    <nav>
+
+        <!-- CHANGE THIS: Your name -->
+        <h2>Yash</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="themeButton">🌙</button>
+
+    </nav>
+
+
+    <!-- =========================
+         PROJECTS PAGE
+         ========================= -->
+
+    <section class="page">
+
+        <h1>My Projects</h1>
+
+        <p class="click-info">
+            Click on any project to see more details.
+        </p>
+
+
+        <div class="project-container">
+
+
+            <!-- =========================
+                 PROJECT 1
+                 CHANGE THE DETAILS
+                 ========================= -->
+
+            <div class="project"
+                 onclick="openModal(
+                 'Banking Management System',
+                 'Java Project',
+                 'This project is designed to manage bank accounts and transactions. It can include features such as creating accounts, depositing money, withdrawing money, checking balance and viewing transaction history.'
+                 )">
+
+                <h2>Banking Management System</h2>
+
+                <p>
+                    A Java project for managing bank
+                    accounts and transactions.
+                </p>
+
+                <span>Click to view details →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 PROJECT 2
+                 ========================= -->
+
+            <div class="project"
+                 onclick="openModal(
+                 'Library Management System',
+                 'Java / Database Project',
+                 'This project helps manage library records. It can be used to add books, issue books, return books and maintain student or member information.'
+                 )">
+
+                <h2>Library Management System</h2>
+
+                <p>
+                    A system for managing books,
+                    students and library records.
+                </p>
+
+                <span>Click to view details →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 PROJECT 3
+                 ========================= -->
+
+            <div class="project"
+                 onclick="openModal(
+                 'Hotel Management System',
+                 'Java Project',
+                 'This project can be used to manage hotel rooms, customers and bookings. Features can include room availability, customer registration, check-in, check-out and billing.'
+                 )">
+
+                <h2>Hotel Management System</h2>
+
+                <p>
+                    A system for managing rooms,
+                    customers and bookings.
+                </p>
+
+                <span>Click to view details →</span>
+
+            </div>
+
+
+            <!-- =========================
+                 PROJECT 4
+                 ========================= -->
+
+            <div class="project"
+                 onclick="openModal(
+                 'Personal Portfolio',
+                 'HTML, CSS & JavaScript',
+                 'This is my personal portfolio website. It contains multiple pages including Home, About, Skills, Projects and Contact. JavaScript is used for dark mode, form validation and interactive project and skill details.'
+                 )">
+
+                <h2>Personal Portfolio</h2>
+
+                <p>
+                    My personal website created using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <span>Click to view details →</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DETAILS POPUP / MODAL
+         ========================= -->
+
+    <div id="detailsModal" class="modal">
+
+        <div class="modal-content">
+
+            <!-- Close button -->
+            <button class="close-button" onclick="closeModal()">
+                ×
+            </button>
+
+            <!-- JavaScript fills these -->
+            <h2 id="modalTitle"></h2>
+
+            <h3 id="modalSubtitle"></h3>
+
+            <p id="modalDescription"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <!-- CHANGE THIS -->
+        <p>© 2026 Yash | My Portfolio</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
